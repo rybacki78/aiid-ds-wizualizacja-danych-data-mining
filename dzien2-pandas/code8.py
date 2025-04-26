@@ -45,3 +45,7 @@ gastro[1] = gastro[1].astype(int)
 gastro[2] = gastro[2].astype(int)
 print(gastro)
 gastro.info()
+
+
+
+
