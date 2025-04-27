@@ -1,6 +1,8 @@
 import pandas as pd
+import os
+print(os.getcwd())
 
-wynag = pd.read_csv("data-sets/wynagrodzenia22.csv", sep=";", decimal=",")
+wynag = pd.read_csv("../data-sets/wynagrodzenia22.csv", sep=";", decimal=",")
 
 print(wynag)
 wynag.info()
@@ -34,7 +36,7 @@ print(mean_wynag)
 print(q2_wynag)
 
 # dla wojewodztwa
-wynagrodzenia = pd.read_csv("data-sets/wynagrodzenia22.csv", sep=";", decimal=",", index_col=0).T
+wynagrodzenia = pd.read_csv("../data-sets/wynagrodzenia22.csv", sep=";", decimal=",", index_col=0).T
 lodzkie = wynagrodzenia["ŁÓDZKIE"].mean()
 
 print(lodzkie)
